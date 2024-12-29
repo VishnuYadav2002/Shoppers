@@ -1,0 +1,80 @@
+.slider {
+    position: relative;
+    width: 100%;
+    height: 450px; 
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background-size: 100% 100%;
+    background-position: center;
+    opacity: 0; 
+    transition: opacity 1s ease; 
+  }
+  
+  .slide.active {
+    opacity: 1; 
+  }
+  
+  .content {
+    position: absolute;
+    top: 38%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .shop-now {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #f00; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .shop-now:hover {
+    background-color: #c00; 
+  }
+  .prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 25%;
+  font-size: 18px; 
+  transition: background-color 0.3s;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px; 
+}
+
+.next {
+  right: 10px; 
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.7); 
+}
